@@ -3,5 +3,4 @@
 .clang-format
 /images/test/
 /images/train/
-/metrics/
-/Video/
+/Video/result*
