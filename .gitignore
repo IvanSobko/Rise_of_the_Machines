@@ -1,0 +1,7 @@
+/cmake-build-debug/
+/.idea/
+.clang-format
+/images/test/
+/images/train/
+/metrics/
+/Video/
