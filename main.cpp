@@ -54,7 +54,7 @@ void preprocessData() {
         fs::copy_file(briskData[i], newfilename, fs::copy_option::overwrite_if_exists);
         fileLabels << newfilename << "," << 1 << "\n";
     }
-    for (size_t i = surfData.size() * 0.8 - 1; i < surfData.size() * 0.8; i++) {
+    for (size_t i = surfData.size() * 0.8 - 1; i < surfData.size(); i++) {
         auto newfilename = "../images/test/" + std::to_string(num++) + ".jpg";
         fs::copy_file(surfData[i], newfilename, fs::copy_option::overwrite_if_exists);
         fileLabels << newfilename << "," << 2 << "\n";

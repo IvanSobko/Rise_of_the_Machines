@@ -48,7 +48,7 @@ void ObjectDetector::train(std::vector<cv::Mat> images, std::vector<int> labels,
 //    }
     model = DTrees::create();
     model->setCVFolds(1);
-    model->setMaxDepth(20);
+    model->setMaxDepth(15);
     model->train(samples, ROW_SAMPLE, labels);
     std::cout << "Trained "<< (mBriskDescr ? "brisk" : "surf") << " DTREES model." <<  std::endl;
     filename += mBriskDescr ? "dtrees_brisk.xml" : "drees_surf.xml";

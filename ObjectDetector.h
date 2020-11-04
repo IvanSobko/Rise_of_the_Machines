@@ -27,7 +27,7 @@ private:
     cv::Mat getDescriptors(std::vector<cv::Mat> images);
 
     int num_clusters = 8;
-    int num_descr = 30;
+    int num_descr = 60;
     bool mBriskDescr = true;
     cv::Rect curImgBoundRect;
 };
